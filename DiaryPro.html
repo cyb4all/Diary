@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dear diary</title>
+  </head>
+
+  <body style="background-color: rgb(255, 233, 236);">
+  
+      <h2 class="h2"><img class = "heart" src="https://i.postimg.cc/kg5HtCVZ/image-2025-09-14-18-41-04.png">Welcome to your safe space</h2>
+      <h3 class="h3"><img class="heart2" src="https://i.postimg.cc/kg5HtCVZ/image-2025-09-14-18-41-04.png">write down your thoghts!</h3>
+ 
+      <button class="add" title="New Entry">+</button>
+
+        <div class = "notes-container">
+          <!----<p contenteditable="true" class="input-box">
+            <img src="https://i.postimg.cc/9fWvb9Nx/garbage.png">
+      </p>-->
+    </div>
+  </div>
+   <script src="scriptD.js"></script>
+  </body>
+
+  <style>
+    .h2, h3{
+      color: rgb(212, 112, 129);
+      text-align: center;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .heart{
+      width: 100px;
+      mix-blend-mode: multiply;
+    }
+    
+    .heart2{
+      width: 80px;
+      mix-blend-mode: multiply;
+      align-items: center;
+      margin-left: 35px;
+    }
+
+    .add{
+      background-color: rgb(246, 199, 207);
+      color: rgb(225, 139, 168);
+      font-weight: bold;
+      border-style: solid;
+      border-color: rgb(225, 139, 168);
+      align-items: center;
+      color: #fff;
+      font-size: 16px;
+      cursor:pointer;
+      display: flex;
+      align-items: center;
+      border-radius: 40px;
+      padding: 15px 25px;
+      margin: 30px auto 20px;
+      transition: 0.3s;
+    }
+
+    .add:hover{
+      background-color: rgb(225, 139, 168);
+      color: rgb(246, 199, 207);
+      border-color: rgb(246, 199, 207);
+      box-shadow: 0px 5px 8px rgb(0, 0, 0, 0.15);
+    }
+
+    .input-box{
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      min-width: 150px;
+      background: #fff;
+      color: #333;
+      padding: 20px;
+      margin: 20px 0;
+      outline: none;
+      border-radius: 10px;
+      outline: none;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+      min-height: 80px;
+    }
+
+    .input-box img{
+      width: 25px;
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      cursor: pointer;
+    }
+
+    .notes-container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 600px) {
+      .h2, .h3 {
+        font-size: 18px;
+        flex-direction: column;
+        gap: 5px;
+
+    }
+  }
+  </style>
+
